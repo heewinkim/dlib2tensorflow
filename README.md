@@ -17,7 +17,9 @@ $ wget http://dlib.net/files/dlib_face_recognition_resnet_model_v1.dat.bz2
 $ bzip2 dlib_face_recognition_resnet_model_v1.dat.bz2 --decompress
 
 ### generate face recognition xml file
+
 $ g++ -std=c++11 -O3 -Idlib-19.19 ./dlib-19.19/dlib/all/source.cpp -lpthread -lX11 dlib_to_xml.cpp -o dlib_to_xml
+
 $ ./dlib_to_xml
 
 ### convert dlib to tensorflow
